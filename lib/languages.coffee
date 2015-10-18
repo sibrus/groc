@@ -111,8 +111,17 @@ module.exports = LANGUAGES =
     ignorePrefix:      '}'
     foldPrefix:        '^'
 
+  EJS:
+    nameMatchers: ['.ejs', '.ujs'],
+    pygmentsLexer: 'html',
+    highlightJS: 'html',
+    multiLineComment: [
+      '/*', '*', '*/',
+      '<!--', '', '-->'
+    ]
+
   Handlebars:
-    nameMatchers:      ['.handlebars', '.hbs']
+    nameMatchers:      ['.handlebars', '.hbs', '.dot']
     pygmentsLexer:     'html' # TODO: is there a handlebars/mustache lexer? Nope. Lame.
     highlightJS:       'handlebars'
     multiLineComment:  [
@@ -173,7 +182,7 @@ module.exports = LANGUAGES =
     foldPrefix:        '^'
 
   JSON                :
-    nameMatchers      : ['.json']
+    nameMatchers      : ['.json', '.json.sample']
     pygmentsLexer     : 'json'
     codeOnly          : true
 
