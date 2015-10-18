@@ -98,7 +98,7 @@ visitCurrentNode = ->
 # ## Node Search
 
 # Only show a filter if it matches this many or fewer nodes
-MAX_FILTER_SIZE = 10
+MAX_FILTER_SIZE = 100
 
 # An array of of [search string, node, label text] triples
 searchableNodes = []
